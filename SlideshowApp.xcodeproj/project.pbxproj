@@ -12,6 +12,10 @@
 		AE76EA1A2219884F0060469E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA182219884F0060469E /* Main.storyboard */; };
 		AE76EA1C2219884F0060469E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA1B2219884F0060469E /* Assets.xcassets */; };
 		AE76EA1F2219884F0060469E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA1D2219884F0060469E /* LaunchScreen.storyboard */; };
+		AE76EA27221988B00060469E /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA26221988B00060469E /* img1.jpg */; };
+		AE76EA29221988C40060469E /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA28221988C40060469E /* img2.jpg */; };
+		AE76EA2B221988DE0060469E /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE76EA2A221988DD0060469E /* img3.jpg */; };
+		AE76EA2D2219BC980060469E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76EA2C2219BC980060469E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		AE76EA1B2219884F0060469E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE76EA1E2219884F0060469E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE76EA202219884F0060469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE76EA26221988B00060469E /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		AE76EA28221988C40060469E /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		AE76EA2A221988DD0060469E /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		AE76EA2C2219BC980060469E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 				AE76EA162219884F0060469E /* ViewController.swift */,
 				AE76EA182219884F0060469E /* Main.storyboard */,
 				AE76EA1B2219884F0060469E /* Assets.xcassets */,
+				AE76EA26221988B00060469E /* img1.jpg */,
+				AE76EA28221988C40060469E /* img2.jpg */,
+				AE76EA2A221988DD0060469E /* img3.jpg */,
 				AE76EA1D2219884F0060469E /* LaunchScreen.storyboard */,
 				AE76EA202219884F0060469E /* Info.plist */,
+				AE76EA2C2219BC980060469E /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,7 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE76EA1F2219884F0060469E /* LaunchScreen.storyboard in Resources */,
+				AE76EA27221988B00060469E /* img1.jpg in Resources */,
+				AE76EA2B221988DE0060469E /* img3.jpg in Resources */,
 				AE76EA1C2219884F0060469E /* Assets.xcassets in Resources */,
+				AE76EA29221988C40060469E /* img2.jpg in Resources */,
 				AE76EA1A2219884F0060469E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +152,7 @@
 			files = (
 				AE76EA172219884F0060469E /* ViewController.swift in Sources */,
 				AE76EA152219884F0060469E /* AppDelegate.swift in Sources */,
+				AE76EA2D2219BC980060469E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMJHLGPZ9H;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMJHLGPZ9H;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
