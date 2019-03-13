@@ -15,22 +15,24 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    let image = ["img1","img2","img3"]
+    let image = ["img1.jpg","img2.jpg","img3.jpg"]
     
     
     var counter:Int = 0
     
     let imageNameArray = [
-        "img1",
-        "img2",
-        "img3",
+        "img1.jpg",
+        "img2.jpg",
+        "img3.jpg",
         ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let name = imageNameArray[dispImageNo]
-        let image = UIImage(named: name);            imageView.image = image
+        let image = UIImage(named: name);
+        
+        imageView.image = image
         
     }
     
@@ -41,24 +43,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Next: UIButton!
     
+    var timer: Timer!
+    
+    
     //再生ボタンを押した時のメソッド
     @IBAction func PlayPause(_ sender: Any) {
-        
-        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(displayImage), userInfo: nil, repeats: true)
-      
         if self.timer != nil {
-            print("再生中")
-            
-            
-            PlayPause.setTitle("再生", for: UIControl.State.normal)
         
+       
+    
+            PlayPause.setTitle("再生", for: UIControl.State.normal);            timer?.invalidate()
+            timer = nil
             
-            
-            Prev.isEnabled = true
-            
-            Next.isEnabled = true                }
-        else {
+        }else {
             PlayPause.setTitle("停止", for: UIControl.State.normal)
+            
+            
+             Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(displayImage
+                )), userInfo: nil, repeats: true)
+
             Prev.isEnabled = false
             
             Next.isEnabled = false
