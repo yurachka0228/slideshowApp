@@ -158,7 +158,8 @@ class ViewController: UIViewController {
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
-    @IBAction func CloseUp(_ sender: Any) {
-    }
+    @IBAction func CloseUp(_ sender: Any)
+    {timer?.invalidate()
+        timer = nil    }
     
 }

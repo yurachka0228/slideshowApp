@@ -101,12 +101,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zEn-2J-3OY">
                                 <rect key="frame" x="16" y="45.5" width="343" height="546"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="aKz-MC-Ise"/>
-                                    <constraint firstAttribute="height" constant="546" id="eva-My-NUb"/>
+                                    <constraint firstAttribute="width" secondItem="zEn-2J-3OY" secondAttribute="height" multiplier="49:78" id="3F3-2n-ANp"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0W-gG-Qlk">
-                                <rect key="frame" x="172" y="617" width="31" height="30"/>
+                                <rect key="frame" x="112.5" y="617" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3NX-fw-Kv7"/>
+                                    <constraint firstAttribute="width" constant="150" id="3yi-Vh-zgs"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="cwb-7m-rlm" kind="unwind" unwindAction="unwind:" id="XB8-Oj-VDA"/>
@@ -116,11 +119,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zEn-2J-3OY" firstAttribute="centerX" secondItem="NZb-yS-Vu1" secondAttribute="centerX" id="4Xi-jW-Cjo"/>
-                            <constraint firstItem="NZb-yS-Vu1" firstAttribute="trailing" secondItem="e0W-gG-Qlk" secondAttribute="trailing" constant="172" id="ODt-FW-OdS"/>
+                            <constraint firstItem="e0W-gG-Qlk" firstAttribute="top" secondItem="zEn-2J-3OY" secondAttribute="bottom" constant="25.5" id="ABg-j5-IeX"/>
+                            <constraint firstItem="zEn-2J-3OY" firstAttribute="top" secondItem="NZb-yS-Vu1" secondAttribute="top" constant="25.5" id="P0d-aL-PSQ"/>
                             <constraint firstItem="zEn-2J-3OY" firstAttribute="centerY" secondItem="NZb-yS-Vu1" secondAttribute="centerY" constant="-25" id="a7B-iF-49T"/>
-                            <constraint firstItem="NZb-yS-Vu1" firstAttribute="bottom" secondItem="e0W-gG-Qlk" secondAttribute="bottom" constant="20" id="aAw-Cz-YPi"/>
                             <constraint firstItem="e0W-gG-Qlk" firstAttribute="centerX" secondItem="NZb-yS-Vu1" secondAttribute="centerX" id="p0G-Eo-PWt"/>
-                            <constraint firstItem="e0W-gG-Qlk" firstAttribute="leading" secondItem="NZb-yS-Vu1" secondAttribute="leading" constant="172" id="tIi-3e-Jxm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NZb-yS-Vu1"/>
                     </view>
