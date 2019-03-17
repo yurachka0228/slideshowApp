@@ -25,9 +25,11 @@
                                     <constraint firstAttribute="height" constant="304" id="7Jp-sx-16h"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-0c-MwT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-0c-MwT">
                                 <rect key="frame" x="69.5" y="61.5" width="236" height="304"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="CloseUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MR-6n-Nh7"/>
                                     <segue destination="bLH-fB-dWC" kind="show" id="WIA-Ej-STz"/>
